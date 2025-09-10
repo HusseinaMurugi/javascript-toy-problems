@@ -20,9 +20,8 @@ Use `git clone` to download the repository to your computer.
 - A browser (e.g. Chrome, Firefox)  
 - Node.js (optional if you want to run the `.js` files directly)
 
-# Live Link
+## Live Link
 [GitHub Repository](https://github.com/HusseinaMurugi/javascript-toy-problems)
-
 
 ## Technologies used
 - HTML  
@@ -30,7 +29,7 @@ Use `git clone` to download the repository to your computer.
 - GitHub  
 
 ## Support and contact details
-github.com/HusseinaMurugi
+[HusseinaMurugi on GitHub](https://github.com/HusseinaMurugi)
 
 ### License
 The content of this site is licensed under the MIT license  

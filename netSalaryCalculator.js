@@ -29,13 +29,12 @@ function calculatePAYE(taxable) {
     tax = (24000 * 0.1) + ((32333 - 24000) * 0.25) + ((taxable - 32333) * 0.30);
   }
 
-  tax = tax - 2400;
+  tax = tax - 2400; 
   return tax > 0 ? tax : 0;
 }
 
-
-let basicSalary = Number(prompt("Enter your basic salary:"));
-let benefits = Number(prompt("Enter your benefits:"));
+let basicSalary = Number(prompt("Enter your basic salary (KES):"));
+let benefits = Number(prompt("Enter your benefits (KES):"));
 
 let grossSalary = basicSalary + benefits;
 let nssf = Math.min(grossSalary * 0.06, 1080);
@@ -44,14 +43,14 @@ let paye = calculatePAYE(taxableIncome);
 let nhif = calculateNHIF(grossSalary);
 let netSalary = grossSalary - (nssf + nhif + paye);
 
-
 let result = `
-Gross Salary: Ksh ${grossSalary}
-NSSF Deduction: Ksh ${nssf}
-NHIF Deduction: Ksh ${nhif}
-PAYE (Tax): Ksh ${paye}
+===== Salary Breakdown =====
+Gross Salary: KES ${grossSalary}
+NSSF Deduction: KES ${nssf}
+NHIF Deduction: KES ${nhif}
+PAYE (Tax): KES ${paye}
 ----------------------------------
-Net Salary: Ksh ${netSalary}
+Net Salary: KES ${netSalary}
 `;
 
 console.log(result);
