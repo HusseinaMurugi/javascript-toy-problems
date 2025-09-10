@@ -30,7 +30,7 @@ Use `git clone` to download the repository to your computer.
 - GitHub  
 
 ## Support and contact details
-github.com/your-username
+github.com/HusseinaMurugi
 
 ### License
 The content of this site is licensed under the MIT license  
